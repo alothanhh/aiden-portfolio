@@ -24,8 +24,8 @@ export const ATOM = {
       title: 'Frontend Developer',
       date: 'Jul 2024 - Present',
       description: [
-        '• Participated in projects to develop payment solutions for the banking sector (OCB and BVBank).',
-        '• Collaborated with the team (BE, Design, QA) to update features based on requirements.',
+        '• Developed payment solution projects for the banking sector, including BVBank (DigiStore) and OCB.',
+        '• Collaborated closely with cross-functional teams, including back-end developers and designers, to understand business requirements and translate them into effective technical solutions.',
       ],
     },
     {
