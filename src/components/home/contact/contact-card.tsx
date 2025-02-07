@@ -82,7 +82,7 @@ function ContactCard({ logo, title, description }: Props) {
               </Link>
               <Text> | </Text>
               <Link href='https://www.facebook.com/alo.thanhh' target='_blank' className='gradient-text'>
-                Telegram
+                Facebook
               </Link>
             </Flex>
           )}
