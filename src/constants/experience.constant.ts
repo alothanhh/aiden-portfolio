@@ -29,7 +29,7 @@ export const ATOM = {
       ],
     },
     {
-      title: 'Frontend Intern',
+      title: 'Software Engineer Intern',
       date: 'Apr 2024 - Jul 2024',
       description: [
         '• Researched and learned about the latest technologies on blockchain, such as Ethereum, SUI and Aptos.',
