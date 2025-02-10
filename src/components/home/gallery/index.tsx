@@ -16,8 +16,6 @@ const Gallery = () => {
   const { isMobile } = useWindowSize()
   const { targetId, targetRef } = useContext(ScrollContext)
 
-  if (typeof window === 'undefined') return null
-
   // The scrollingElement is usually the window, if you are scrolling inside another element, suplly it here
   const scrollingElement = window
   const initialWidth = isMobile ? scrollingElement?.innerWidth - 32 : scrollingElement?.innerWidth - 64
@@ -73,6 +71,8 @@ const Gallery = () => {
     }),
     [isMobile, galleryWidth, scrollingElement.innerHeight]
   )
+
+  if (typeof window === 'undefined') return null
 
   return (
     <ScrollFadeUp repeat>
