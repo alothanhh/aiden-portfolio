@@ -7,10 +7,10 @@ import { ProGallery } from 'pro-gallery'
 import Title from '@/components/common/Title'
 import ScrollFadeUp from '@/components/shared/scroll-fade-up'
 import { items } from '@/constants/gallery.constant'
+import { ScrollContext } from '@/contexts/scroll.context'
 import useWindowSize from '@/hooks/use-window-size'
 
 import 'pro-gallery/dist/statics/main.css'
-import { ScrollContext } from '@/contexts/scroll.context'
 
 const Gallery = () => {
   const { isMobile } = useWindowSize()
