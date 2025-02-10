@@ -5,11 +5,10 @@ import { useContext } from 'react'
 import { Box, Flex, List, Text, ThemeIcon } from '@mantine/core'
 import { IconAward, IconBriefcase, IconCertificate } from '@tabler/icons-react'
 
+import Title from '@/components/common/Title'
 import ScrollFadeUp from '@/components/shared/scroll-fade-up'
 import { ScrollContext } from '@/contexts/scroll.context'
 import useWindowSize from '@/hooks/use-window-size'
-
-import Title from '../../common/Title'
 
 const Education = () => {
   const { isMobile } = useWindowSize()
@@ -29,8 +28,7 @@ const Education = () => {
           width: '100%',
         }}
       >
-        {/* <Image src={experience.logo} alt="logo" width={64} /> */}
-        <Title text='Education' />
+        <Title text='EDUCATION' />
 
         <Flex
           direction='column'
