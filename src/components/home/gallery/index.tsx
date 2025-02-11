@@ -1,6 +1,6 @@
 'use client'
 
-import { useContext, useMemo, useState } from 'react'
+import { useContext, useEffect, useMemo, useState } from 'react'
 import { Flex, Text } from '@mantine/core'
 import { ProGallery } from 'pro-gallery'
 
@@ -16,10 +16,25 @@ const Gallery = () => {
   const { isMobile } = useWindowSize()
   const { targetId, targetRef } = useContext(ScrollContext)
 
+  const [galleryWidth, setGalleryWidth] = useState<number>(0) // Initialize to 0
+  const [galleryHeight, setGalleryHeight] = useState<number>(0) // Add height state
+  const [scrollingElement, setScrollingElement] = useState<Window | null>(null)
+
   // The scrollingElement is usually the window, if you are scrolling inside another element, suplly it here
-  const scrollingElement = window
-  const initialWidth = isMobile ? scrollingElement?.innerWidth - 32 : scrollingElement?.innerWidth - 64
-  const [galleryWidth, setGalleryWidth] = useState<number>(initialWidth)
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      setScrollingElement(window)
+      const handleResize = () => {
+        const width = isMobile ? window.innerWidth - 32 : window.innerWidth - 64
+        const height = window.innerHeight > 1200 || isMobile ? window.innerHeight / 3 : (window.innerHeight * 2) / 3
+        setGalleryWidth(width)
+        setGalleryHeight(height)
+      }
+      window.addEventListener('resize', handleResize)
+      handleResize() // Initial calculation
+      return () => window.removeEventListener('resize', handleResize)
+    }
+  }, [isMobile])
 
   // The options of the gallery (from the playground current state)
   const options = {
@@ -54,25 +69,19 @@ const Gallery = () => {
   //   const parentRect = galleryRef.current?.getBoundingClientRect()
   // The eventsListener will notify you anytime something has happened in the gallery.
   const eventsListener = (eventName: any, eventData: any) => {
-    console.log({ eventName, eventData })
-    // console.log(parentRect?.width)
-    if (eventName === 'GALLERY_SCROLLED') {
-      setGalleryWidth(isMobile ? scrollingElement.innerWidth - 32 : scrollingElement.innerWidth - 64)
+    if (eventName === 'GALLERY_SCROLLED' && scrollingElement) {
+      const width = isMobile ? scrollingElement.innerWidth - 32 : scrollingElement.innerWidth - 64
+      setGalleryWidth(width)
     }
   }
 
   const container = useMemo(
     () => ({
       width: galleryWidth,
-      height:
-        scrollingElement.innerHeight > 1200 || isMobile
-          ? scrollingElement.innerHeight / 3
-          : (scrollingElement.innerHeight * 2) / 3,
+      height: galleryHeight,
     }),
-    [isMobile, galleryWidth, scrollingElement.innerHeight]
+    [galleryWidth, galleryHeight]
   )
-
-  if (typeof window === 'undefined') return null
 
   return (
     <ScrollFadeUp repeat>
