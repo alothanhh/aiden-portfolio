@@ -6,7 +6,7 @@ import { ProGallery } from 'pro-gallery'
 
 import Title from '@/components/common/Title'
 import ScrollFadeUp from '@/components/shared/scroll-fade-up'
-import { items } from '@/constants/gallery.constant'
+import { GALLERY_ITEMS } from '@/constants/gallery.constant'
 import { ScrollContext } from '@/contexts/scroll.context'
 import useWindowSize from '@/hooks/use-window-size'
 
@@ -44,7 +44,7 @@ const Gallery = () => {
         scrollDirection: 'HORIZONTAL' as 'HORIZONTAL' | 'VERTICAL' | undefined,
       },
       groups: {
-        repeatingGroupTypes: ['3b', '3t', '3t', '2v', '2v'] as (
+        repeatingGroupTypes: ['3b', '3t', '3t', '2v', '2v', '3b', '3t', '2v', '1', '3b'] as (
           | '3b'
           | '3t'
           | '1'
@@ -61,6 +61,23 @@ const Gallery = () => {
       gallery: {
         horizontal: {
           blockScroll: false,
+        },
+      },
+      item: {
+        clickAction: 'ACTION' as 'ACTION' | 'NOTHING' | 'LINK' | 'MAGNIFY' | undefined,
+        overlay: {
+          hoveringBehaviour: 'NEVER_SHOW' as 'APPEARS' | 'DISAPPEARS' | 'ALWAYS_SHOW' | 'NEVER_SHOW',
+        },
+        content: {
+          hoverAnimation: 'ZOOM_IN' as
+            | 'NO_EFFECT'
+            | 'ZOOM_IN'
+            | 'BLUR'
+            | 'GRAYSCALE'
+            | 'SHRINK'
+            | 'INVERT'
+            | 'COLOR_IN'
+            | 'DARKENED',
         },
       },
     },
@@ -106,7 +123,7 @@ const Gallery = () => {
         </Flex>
 
         <ProGallery
-          items={items}
+          items={GALLERY_ITEMS}
           options={options}
           container={container}
           scrollingElement={scrollingElement}

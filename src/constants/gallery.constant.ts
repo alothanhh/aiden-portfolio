@@ -1,7 +1,7 @@
-export const items = [
+export const GALLERY_ITEMS = [
   {
     itemId: 'sample-id-1',
-    mediaUrl: 'https://iili.io/2bVg8jS.png',
+    mediaUrl: 'https://iili.io/2bVrQls.png',
     metaData: {
       type: 'image',
       title: 'sample-title',
@@ -15,7 +15,7 @@ export const items = [
   },
   {
     itemId: 'sample-id-2',
-    mediaUrl: 'https://iili.io/2bVgvu2.png',
+    mediaUrl: 'https://iili.io/2bV40XI.png',
     metaData: {
       type: 'image',
       title: 'sample-title',
@@ -177,11 +177,202 @@ export const items = [
     },
   },
   {
-    // Image item:
     itemId: 'sample-id-10',
     mediaUrl: 'https://iili.io/2bVrCMX.png',
     metaData: {
       type: 'image',
+      title: 'sample-title',
+      description: 'sample-description',
+      focalPoint: [0, 0],
+      link: {
+        url: 'http://example.com',
+        target: '_blank',
+      },
+    },
+  },
+  {
+    itemId: 'sample-id-10',
+    mediaUrl: 'https://iili.io/2bVgpMF.png',
+    metaData: {
+      type: 'image',
+      title: 'sample-title',
+      description: 'sample-description',
+      height: 1.4,
+      width: 2.2,
+      focalPoint: [0, 0],
+      link: {
+        url: 'http://example.com',
+        target: '_blank',
+      },
+    },
+  },
+  {
+    itemId: 'sample-id-10',
+    mediaUrl: 'https://iili.io/2bV4FUb.png',
+    metaData: {
+      type: 'image',
+      title: 'sample-title',
+      height: 1,
+      width: 1.5,
+      description: 'sample-description',
+      focalPoint: [0, 0],
+      link: {
+        url: 'http://example.com',
+        target: '_blank',
+      },
+    },
+  },
+  {
+    itemId: 'sample-id-10',
+    mediaUrl: 'https://iili.io/2bVrBnt.png',
+    metaData: {
+      type: 'image',
+      height: 2,
+      width: 3,
+      title: 'sample-title',
+      description: 'sample-description',
+      focalPoint: [0, 0],
+      link: {
+        url: 'http://example.com',
+        target: '_blank',
+      },
+    },
+  },
+  {
+    itemId: 'sample-id-10',
+    mediaUrl: 'https://iili.io/2bV4BOQ.png',
+    metaData: {
+      type: 'image',
+      height: 1.8,
+      width: 2.4,
+      title: 'sample-title',
+      description: 'sample-description',
+      focalPoint: [0, 0],
+      link: {
+        url: 'http://example.com',
+        target: '_blank',
+      },
+    },
+  },
+  {
+    itemId: 'sample-id-10',
+    mediaUrl: 'https://iili.io/2bVrESj.png',
+    metaData: {
+      type: 'image',
+      height: 1,
+      width: 1,
+      title: 'sample-title',
+      description: 'sample-description',
+      focalPoint: [0, 0],
+      link: {
+        url: 'http://example.com',
+        target: '_blank',
+      },
+    },
+  },
+  {
+    itemId: 'sample-id-10',
+    mediaUrl: 'https://iili.io/2bVrnPn.png',
+    metaData: {
+      type: 'image',
+      height: 1.2,
+      width: 2,
+      title: 'sample-title',
+      description: 'sample-description',
+      focalPoint: [0, 0],
+      link: {
+        url: 'http://example.com',
+        target: '_blank',
+      },
+    },
+  },
+  {
+    itemId: 'sample-id-10',
+    mediaUrl: 'https://iili.io/2bVrLfn.png',
+    metaData: {
+      type: 'image',
+      height: 3,
+      width: 4,
+      title: 'sample-title',
+      description: 'sample-description',
+      focalPoint: [0, 0],
+      link: {
+        url: 'http://example.com',
+        target: '_blank',
+      },
+    },
+  },
+  {
+    itemId: 'sample-id-10',
+    mediaUrl: 'https://iili.io/2bV4Aga.png',
+    metaData: {
+      type: 'image',
+      height: 3,
+      width: 2.4,
+      title: 'sample-title',
+      description: 'sample-description',
+      focalPoint: [0, 0],
+      link: {
+        url: 'http://example.com',
+        target: '_blank',
+      },
+    },
+  },
+  {
+    itemId: 'sample-id-10',
+    mediaUrl: 'https://iili.io/2bV41st.png',
+    metaData: {
+      type: 'image',
+      height: 1,
+      width: 1.35,
+      title: 'sample-title',
+      description: 'sample-description',
+      focalPoint: [0, 0],
+      link: {
+        url: 'http://example.com',
+        target: '_blank',
+      },
+    },
+  },
+  {
+    itemId: 'sample-id-10',
+    mediaUrl: 'https://iili.io/2bV4xWP.gif',
+    metaData: {
+      type: 'image',
+      height: 1,
+      width: 1,
+      title: 'sample-title',
+      description: 'sample-description',
+      focalPoint: [0, 0],
+      link: {
+        url: 'http://example.com',
+        target: '_blank',
+      },
+    },
+  },
+  {
+    itemId: 'sample-id-10',
+    mediaUrl: 'https://iili.io/2bV4CbV.png',
+    metaData: {
+      type: 'image',
+      height: 2,
+      width: 2,
+      title: 'sample-title',
+      description: 'sample-description',
+      focalPoint: [0, 0],
+      link: {
+        url: 'http://example.com',
+        target: '_blank',
+      },
+    },
+  },
+  {
+    itemId: 'sample-id-10',
+    mediaUrl: 'https://iili.io/2bV4ozB.png',
+    metaData: {
+      type: 'image',
+      height: 3,
+      width: 10,
       title: 'sample-title',
       description: 'sample-description',
       focalPoint: [0, 0],
