@@ -26,15 +26,16 @@ export const ATOM = {
       description: [
         '• Developed payment solution projects for the banking sector, including BVBank (DigiStore) and OCB.',
         '• Collaborated closely with cross-functional teams, including back-end developers and designers, to understand business requirements and translate them into effective technical solutions.',
+        '• Participated in code reviews and contributed to frontend best practices.',
       ],
     },
     {
       title: 'Software Engineer Intern',
       date: 'Apr 2024 - Jul 2024',
       description: [
-        '• Researched and learned about the latest technologies on blockchain, such as Ethereum, SUI and Aptos.',
-        '• Collaborated with the team to develop decentralized web application (dApp) for creating and answering quizzes on-chain.',
-        '• Workeded closely with the team to ensure the website was user-friendly and visually appealing.',
+        '• Researched and presented about the latest technologies on blockchain, such as Ethereum, SUI and Aptos.',
+        '• Collaborated closely with cross-functional teams to develop decentralized web application (dApp) for creating and answering quizzes on-chain.',
+        '• Integrated APIs and smart contracts into the dApp and created the UI/UX, ensuring that the website was user-friendly and visually appealing',
       ],
     },
   ],
