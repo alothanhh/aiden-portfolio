@@ -186,7 +186,7 @@ export const PROJECTS_LIST_DETAIL = [
   {
     title: 'Quizzes on-chain',
     type: `PROJECT OF ATOM`,
-    date: 'Apr 2024 - May 2024',
+    date: 'Mar 2024 - May 2024',
     color: 'red',
     description:
       'A decentralized application on the SUI platform. Players can participate to create and answer quizzes in realtime. All results are stored on the blockchain.',

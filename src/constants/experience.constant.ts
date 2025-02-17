@@ -31,7 +31,7 @@ export const ATOM = {
     },
     {
       title: 'Software Engineer Intern',
-      date: 'Apr 2024 - Jul 2024',
+      date: 'Mar 2024 - Jul 2024',
       description: [
         '• Researched and presented about the latest technologies on blockchain, such as Ethereum, SUI and Aptos.',
         '• Collaborated closely with cross-functional teams to develop decentralized web application (dApp) for creating and answering quizzes on-chain.',
