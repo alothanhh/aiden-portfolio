@@ -117,7 +117,7 @@ const Gallery = () => {
       >
         <Flex direction='column' gap='md'>
           <Title text='GALLERY' />
-          <Text style={{ textAlign: 'center' }}>
+          <Text c='gray' style={{ textAlign: 'center' }}>
             Design publications I created in university extracurricular activities.
           </Text>
         </Flex>

@@ -59,7 +59,7 @@ const Education = () => {
 
           <List listStyleType='disc' style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
             <List.Item>
-              <Text size='md'>Bachelor&apos;s degree, Computer Science</Text>
+              <Text size='md'>B.E. Computer Science</Text>
             </List.Item>
             <List.Item>
               <Box style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
