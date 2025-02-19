@@ -95,6 +95,7 @@ function About() {
             width={150}
             height={150}
             quality={100}
+            priority
             style={{
               objectFit: 'cover',
               minWidth: '150px',
