@@ -20,7 +20,7 @@ const CvPreview = () => {
             ></iframe> */}
 
       <iframe
-        src='https://drive.google.com/viewerng/viewer?embedded=true&url=https%3A%2F%2Fdrive.google.com%2Fuc%3Fexport%3Ddownload%26id%3D1vPl3p9NpxtSbhOE_uIiw99g8k92Og6Z2'
+        src='https://drive.google.com/viewerng/viewer?embedded=true&url=https%3A%2F%2Fdrive.google.com%2Fuc%3Fexport%3Ddownload%26id%3D1JFLbb0wovv6XWSHUs19_gPdn7OlB9Qkx'
         style={{ width: '100%', height: '100vh' }}
       ></iframe>
     </div>
