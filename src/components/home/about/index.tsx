@@ -21,9 +21,9 @@ function About() {
   const { targetRef, targetId } = useContext(ScrollContext)
 
   const handleDownload = () => {
-    const pdfUrl = '/cv/CV_Thanh_Dang.pdf'
+    const pdfUrl = '/cv/Thanh_Dang_Resume.pdf'
 
-    const fileName = 'CV_Thanh_Dang.pdf'
+    const fileName = 'Thanh_Dang_Resume.pdf'
 
     const link = document.createElement('a')
     link.href = pdfUrl
