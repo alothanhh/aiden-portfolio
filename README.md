@@ -2,7 +2,7 @@
 
 Explore my creative journey, skills, and accomplishments! Here, you’ll find highlights of my work, passion projects, and the expertise I bring to every opportunity.
 
-## Live Demo[![Aiden Portfolio](https://user-images.githubusercontent.com/105157457/235510099-c8a3d5f6-f9c0-4f3a-a1c1-b9a2f2a4a9f7.png)](https://aiden-portfolio.site/)
+Available at [https://aiden-portfolio.site](https://aiden-portfolio.site)
 
 ## Home page
 
