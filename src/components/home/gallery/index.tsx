@@ -85,8 +85,7 @@ const Gallery = () => {
 
   //   const parentRect = galleryRef.current?.getBoundingClientRect()
   // The eventsListener will notify you anytime something has happened in the gallery.
-  const eventsListener = (eventName: any, eventData: any) => {
-    console.log(eventName, eventData)
+  const eventsListener = (eventName: any) => {
     if (eventName === 'GALLERY_SCROLLED' && scrollingElement) {
       const width = isMobile ? scrollingElement.innerWidth - 32 : scrollingElement.innerWidth - 64
       setGalleryWidth(width)

@@ -191,7 +191,7 @@ export const GALLERY_ITEMS = [
     },
   },
   {
-    itemId: 'sample-id-10',
+    itemId: 'sample-id-14',
     mediaUrl: 'https://iili.io/2bVgpMF.png',
     metaData: {
       type: 'image',
@@ -207,7 +207,7 @@ export const GALLERY_ITEMS = [
     },
   },
   {
-    itemId: 'sample-id-10',
+    itemId: 'sample-id-15',
     mediaUrl: 'https://iili.io/2bV4FUb.png',
     metaData: {
       type: 'image',
@@ -223,7 +223,7 @@ export const GALLERY_ITEMS = [
     },
   },
   {
-    itemId: 'sample-id-10',
+    itemId: 'sample-id-16',
     mediaUrl: 'https://iili.io/2bVrBnt.png',
     metaData: {
       type: 'image',
@@ -239,7 +239,7 @@ export const GALLERY_ITEMS = [
     },
   },
   {
-    itemId: 'sample-id-10',
+    itemId: 'sample-id-17',
     mediaUrl: 'https://iili.io/2bV4BOQ.png',
     metaData: {
       type: 'image',
@@ -255,7 +255,7 @@ export const GALLERY_ITEMS = [
     },
   },
   {
-    itemId: 'sample-id-10',
+    itemId: 'sample-id-18',
     mediaUrl: 'https://iili.io/2bVrESj.png',
     metaData: {
       type: 'image',
@@ -271,7 +271,7 @@ export const GALLERY_ITEMS = [
     },
   },
   {
-    itemId: 'sample-id-10',
+    itemId: 'sample-id-19',
     mediaUrl: 'https://iili.io/2bVrnPn.png',
     metaData: {
       type: 'image',
@@ -287,7 +287,7 @@ export const GALLERY_ITEMS = [
     },
   },
   {
-    itemId: 'sample-id-10',
+    itemId: 'sample-id-20',
     mediaUrl: 'https://iili.io/2bVrLfn.png',
     metaData: {
       type: 'image',
@@ -303,7 +303,7 @@ export const GALLERY_ITEMS = [
     },
   },
   {
-    itemId: 'sample-id-10',
+    itemId: 'sample-id-21',
     mediaUrl: 'https://iili.io/2bV4Aga.png',
     metaData: {
       type: 'image',
@@ -319,7 +319,7 @@ export const GALLERY_ITEMS = [
     },
   },
   {
-    itemId: 'sample-id-10',
+    itemId: 'sample-id-22',
     mediaUrl: 'https://iili.io/2bV41st.png',
     metaData: {
       type: 'image',
@@ -335,7 +335,7 @@ export const GALLERY_ITEMS = [
     },
   },
   {
-    itemId: 'sample-id-10',
+    itemId: 'sample-id-23',
     mediaUrl: 'https://iili.io/2bV4xWP.gif',
     metaData: {
       type: 'image',
@@ -351,7 +351,7 @@ export const GALLERY_ITEMS = [
     },
   },
   {
-    itemId: 'sample-id-10',
+    itemId: 'sample-id-24',
     mediaUrl: 'https://iili.io/2bV4CbV.png',
     metaData: {
       type: 'image',
@@ -367,7 +367,7 @@ export const GALLERY_ITEMS = [
     },
   },
   {
-    itemId: 'sample-id-10',
+    itemId: 'sample-id-25',
     mediaUrl: 'https://iili.io/2bV4ozB.png',
     metaData: {
       type: 'image',
