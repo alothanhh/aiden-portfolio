@@ -1,5 +1,7 @@
 'use client'
 
+import { Analytics } from '@vercel/analytics/react'
+
 import Header from '@/components/header'
 import About from '@/components/home/about'
 // import Contact from '@/components/home/contact'
@@ -18,6 +20,7 @@ export default function Home() {
       }}
     >
       {/* <h3 data-testid='heading'>Hello World</h3> */}
+      <Analytics />
       <Header />
       <About />
       <SkillMarquee />
