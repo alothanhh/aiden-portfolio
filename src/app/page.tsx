@@ -17,7 +17,7 @@ export default function Home() {
         width: 'device-width',
       }}
     >
-      <h3 data-testid='heading'>Hello World</h3>
+      {/* <h3 data-testid='heading'>Hello World</h3> */}
       <Header />
       <About />
       <SkillMarquee />
