@@ -2,7 +2,7 @@
 
 import Header from '@/components/header'
 import About from '@/components/home/about'
-// import Contact from '@/components/home/contact'
+import Contact from '@/components/home/contact'
 import Education from '@/components/home/education'
 import Experience from '@/components/home/experience'
 import Gallery from '@/components/home/gallery'
@@ -25,7 +25,7 @@ export default function Home() {
       <Projects />
       <Education />
       <Gallery />
-      {/* <Contact /> */}
+      <Contact />
     </main>
   )
 }
