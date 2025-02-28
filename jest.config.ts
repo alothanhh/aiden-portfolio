@@ -14,6 +14,7 @@ const config: Config = {
   moduleNameMapper: {
     '^@/(.*)$': '<rootDir>/src/$1',
     '^@/cv/(.*)$': '<rootDir>/public/cv/$1',
+    // '^.+\\.svg?.+$': 'jest-transform-stub',
   },
   // Add more setup options before each test is run
   setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],

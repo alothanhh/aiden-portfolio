@@ -11,13 +11,7 @@ import SkillMarquee from '@/components/home/skill-marquee'
 
 export default function Home() {
   return (
-    <main
-      style={{
-        marginTop: '70px',
-        width: 'device-width',
-      }}
-    >
-      {/* <h3 data-testid='heading'>Hello World</h3> */}
+    <main style={{ marginTop: '70px', width: 'device-width' }}>
       <Header />
       <About />
       <SkillMarquee />

@@ -4,11 +4,7 @@ import Link from 'next/link'
 import { FC, SVGProps, useMemo, useState } from 'react'
 import { Flex, Text } from '@mantine/core'
 
-type Props = {
-  logo: FC<SVGProps<SVGElement>>
-  title: string
-  description: string
-}
+type Props = { logo: FC<SVGProps<SVGElement>>; title: string; description: string }
 
 function ContactCard({ logo, title, description }: Props) {
   const Logo = logo
@@ -51,26 +47,10 @@ function ContactCard({ logo, title, description }: Props) {
           <Logo fill={iconColor} />
         </div>
         <div>
-          <Text
-            style={{
-              fontSize: '16px',
-              lineHeight: '24px',
-              fontWeight: 700,
-            }}
-          >
-            {title}
-          </Text>
+          <Text style={{ fontSize: '16px', lineHeight: '24px', fontWeight: 700 }}>{title}</Text>
 
           {description !== 'SOCIAL_LIST' ? (
-            <Text
-              style={{
-                fontSize: '14px',
-                lineHeight: '20px',
-                marginBottom: '8px',
-              }}
-            >
-              {description}
-            </Text>
+            <Text style={{ fontSize: '14px', lineHeight: '20px', marginBottom: '8px' }}>{description}</Text>
           ) : (
             <Flex gap='4px'>
               <Link href='https://www.linkedin.com/in/thanh-dangquang/' target='_blank' className='gradient-text'>

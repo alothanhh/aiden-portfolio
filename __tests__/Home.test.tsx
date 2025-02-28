@@ -2,19 +2,19 @@ import '@testing-library/jest-dom'
 
 import { render } from '@testing-library/react'
 
-import Home from '@/app/page'
 import AppProvider from '@/providers'
+import About from '@/components/home/about'
 
-describe('Page', () => {
-  it('renders a heading', () => {
+describe('About section', () => {
+  it('My name is Thanh Dang', () => {
     const { getByTestId } = render(
       <AppProvider>
-        <Home />
+        <About />
       </AppProvider>
     )
 
-    const value = getByTestId('heading').textContent
+    const value = getByTestId('my-name').textContent
 
-    expect(value).toEqual('Hello World')
+    expect(value).toEqual('Thanh Dang')
   })
 })
