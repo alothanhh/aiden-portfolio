@@ -8,7 +8,7 @@ import { Box, Text } from '@mantine/core'
 import icEmail from '@/assets/icons/icEmail.svg'
 import icPhone from '@/assets/icons/icPhone.svg'
 import icPlaceMarker from '@/assets/icons/icPlaceMarker.svg'
-import imgAvatarFocus from '@/assets/images/imgAvatar_2.jpg'
+import imgPortrait from '@/assets/images/portrait.jpg'
 import { ScrollContext } from '@/contexts/scroll.context'
 import useWindowSize from '@/hooks/use-window-size'
 
@@ -62,7 +62,7 @@ function About() {
           </Text>
 
           <Image
-            src={imgAvatarFocus}
+            src={imgPortrait}
             alt="it's me"
             width={150}
             height={150}
@@ -122,12 +122,18 @@ function About() {
         </Box>
 
         <Image
-          src={imgAvatarFocus}
+          src={imgPortrait}
           alt="it's me"
           width={300}
           height={300}
           quality={100}
-          style={{ objectFit: 'cover', minWidth: '300px', borderRadius: '100%', display: isMobile ? 'none' : 'block' }}
+          style={{
+            objectFit: 'cover',
+            objectPosition: 'center',
+            minWidth: '300px',
+            borderRadius: '100%',
+            display: isMobile ? 'none' : 'block',
+          }}
         />
       </Box>
     </ScrollFadeUp>
