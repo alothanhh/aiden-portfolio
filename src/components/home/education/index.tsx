@@ -1,5 +1,4 @@
 'use client'
-import Link from 'next/link'
 
 import { useContext } from 'react'
 import { Box, Flex, List, Text, ThemeIcon } from '@mantine/core'
@@ -63,8 +62,8 @@ const Education = () => {
             </List.Item>
             <List.Item>
               <Box style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
-                <Text size='md'>GPA: 8.05/10 (or 3.4/4)</Text>{' '}
-                <Link
+                <Text size='md'>GPA: 3.4/4 (or 8.05/10)</Text>{' '}
+                {/* <Link
                   href={'https://drive.google.com/file/d/1URIBtR54R9uuouRMAvWEQezYutFzfKBY/view?usp=sharing'}
                   target='_blank'
                   style={{
@@ -76,7 +75,7 @@ const Education = () => {
                   }}
                 >
                   Transcript
-                </Link>
+                </Link> */}
               </Box>
             </List.Item>
           </List>
