@@ -82,7 +82,7 @@ export const PROJECTS_LIST_DETAIL = [
   {
     title: 'Merchant Platform for BVBank',
     type: 'PROJECT OF ATOM',
-    date: 'Aug 2024 - Dec 2024',
+    date: 'Aug 2024 - Present',
     color: 'red',
     description:
       'A management platform for merchants, this is one of the payment infrastructures in the collaboration project between ATOM and Viet Capital Bank to support payment solutions.',

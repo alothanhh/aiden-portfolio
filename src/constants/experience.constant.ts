@@ -22,7 +22,7 @@ export const ATOM = {
   roles: [
     {
       title: 'Frontend Developer',
-      date: 'Jul 2024 - Present',
+      date: 'May 2024 - Present',
       description: [
         '• Developed payment solution projects for the banking sector, including BVBank (DigiStore) and OCB.',
         '• Collaborated closely with cross-functional teams, including back-end developers and designers, to understand business requirements and translate them into effective technical solutions.',
@@ -31,7 +31,7 @@ export const ATOM = {
     },
     {
       title: 'Software Engineer Intern',
-      date: 'Mar 2024 - Jul 2024',
+      date: 'Mar 2024 - May 2024',
       description: [
         '• Researched and presented about the latest technologies on blockchain, such as Ethereum, SUI and Aptos.',
         '• Collaborated closely with cross-functional teams to develop decentralized web application (dApp) for creating and answering quizzes on-chain.',
