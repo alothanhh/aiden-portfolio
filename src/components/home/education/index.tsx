@@ -52,7 +52,7 @@ const Education = () => {
             </Text>
 
             <Text size='lg' fw={600}>
-              Oct 2020 - June 2024
+              Oct 2020 - Nov 2024
             </Text>
           </Flex>
 
