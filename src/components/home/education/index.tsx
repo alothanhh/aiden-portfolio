@@ -105,6 +105,12 @@ const Education = () => {
                 </Text>
               </List.Item>
               <List.Item>
+                <Text size='md'>Academic Encouragement Scholarship (2024)</Text>
+                <Text size='sm' c='gray'>
+                  Issued by Ho Chi Minh City University of Technology
+                </Text>
+              </List.Item>
+              <List.Item>
                 <Text size='md'>CSE Alumni Scholarship</Text>
                 <Text size='sm' c='gray'>
                   Issued by Alumni of the CSE Faculty
