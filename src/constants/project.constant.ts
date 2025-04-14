@@ -17,17 +17,17 @@ export const PROJECTS_LIST = [
     link: 'https://picsum.photos/id/10/200/200',
   },
   {
-    title: 'Merchant Platform for BVBank',
+    title: 'Merchant Platform for bank',
     description:
-      'A comprehensive management platform designed for merchants, developed as a collaborative project between ATOM and Viet Capital Bank',
+      'A comprehensive management platform designed for merchants, developed as a collaborative project between ATOM and banks.',
     image: imgBVBank,
     techList: ['React + Vite', 'Javascript', 'TailwindCSS'],
     link: 'https://picsum.photos/id/10/200/200',
   },
   {
-    title: 'Payment and school management solution for OCB',
+    title: 'Payment and school management Platform',
     description:
-      'The project is a collaboration between ATOM and OCB, designed to support payment solutions for education. It helps students and cashiers efficiently pay and manage tuition bills.',
+      'The project is a collaboration between ATOM and banks, designed to support payment solutions for education. It helps students and cashiers efficiently pay and manage tuition bills.',
     image: imgOcb,
     techList: ['React + Vite', 'Javascript', 'TailwindCSS', 'Redux', 'Redux Toolkit'],
     link: 'https://picsum.photos/id/10/200/200',
@@ -80,12 +80,12 @@ export const PROJECTS_LIST_DETAIL = [
     ],
   },
   {
-    title: 'Merchant Platform for BVBank',
+    title: 'Merchant Platform for bank',
     type: 'PROJECT OF ATOM',
     date: 'Aug 2024 - Present',
     color: 'red',
     description:
-      'A management platform for merchants, this is one of the payment infrastructures in the collaboration project between ATOM and Viet Capital Bank to support payment solutions.',
+      'A management platform for merchants, this is one of the payment infrastructures in the collaboration project between ATOM and banks to support payment solutions.',
     image: imgBVBank,
     hasGitRepo: false,
     gitLink: '',
@@ -116,12 +116,12 @@ export const PROJECTS_LIST_DETAIL = [
     ],
   },
   {
-    title: 'Payment and school management solution for OCB',
+    title: 'Payment and school management Platform',
     type: 'PROJECT OF ATOM',
     date: 'Aug 2024 - Dec 2024',
     color: 'red',
     description:
-      'The project is a collaboration between ATOM and OCB, designed to support payment solutions for education. It helps students and cashiers efficiently pay and manage tuition bills.',
+      'The project is a collaboration between ATOM and banks, designed to support payment solutions for education. It helps students and cashiers efficiently pay and manage tuition bills.',
     image: imgOcb,
     hasGitRepo: false,
     gitLink: '',
