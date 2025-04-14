@@ -22,9 +22,9 @@ export const ATOM = {
   roles: [
     {
       title: 'Frontend Developer',
-      date: 'May 2024 - Present',
+      date: 'May 2024 - Apr 2025',
       description: [
-        '• Developed payment solution projects for the banking sector, including BVBank (DigiStore) and OCB.',
+        '• Developed payment solution projects for the banking sector',
         '• Collaborated closely with cross-functional teams, including back-end developers and designers, to understand business requirements and translate them into effective technical solutions.',
         '• Participated in code reviews and contributed to frontend best practices.',
       ],
