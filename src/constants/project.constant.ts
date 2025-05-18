@@ -6,6 +6,7 @@ import imgMugiRecipe from '@/assets/images/projects/imgMugiRecipe.png'
 import imgOcb from '@/assets/images/projects/imgOCB.jpg'
 import imgPortfolio from '@/assets/images/projects/imgPortfolio.jpg'
 import imgQuizzes from '@/assets/images/projects/imgQuizzes.png'
+import imgVirtualboard from '@/assets/images/projects/imgVirtualboard.png'
 
 export const PROJECTS_LIST = [
   {
@@ -59,26 +60,6 @@ export const PROJECTS_LIST = [
 ]
 
 export const PROJECTS_LIST_DETAIL = [
-  {
-    title: 'Aiden Portfolio',
-    type: 'PERSONAL PROJECT',
-    date: 'Dec 2024',
-    color: 'green',
-    description:
-      'Explore my creative journey, skills, and accomplishments! Here, you’ll find highlights of my work, passion projects, and the expertise I bring to every opportunity.',
-    image: imgPortfolio,
-    hasGitRepo: true,
-    gitLink: 'https://github.com/alothanhh/aiden-portfolio.git',
-    techList: ['Next.js', 'Typescript', 'Mantine', 'Framer Motion', 'EmailJs'],
-    link: 'https://picsum.photos/id/10/200/200',
-    teamSize: 1,
-    feTeam: 1,
-    mainFeature: ['Showcase of my skills, projects, and accomplishments.', 'Directly contact me via email.'],
-    responsibilities: [
-      'Generate ideas and build whole website.',
-      'Initialized the project and set up ESLint and Prettier to enhance code efficiency and maintain consistency.',
-    ],
-  },
   {
     title: 'Merchant Platform for bank',
     type: 'PROJECT OF ATOM',
@@ -184,6 +165,26 @@ export const PROJECTS_LIST_DETAIL = [
     ],
   },
   {
+    title: 'Aiden Portfolio',
+    type: 'PERSONAL PROJECT',
+    date: 'Dec 2024',
+    color: 'green',
+    description:
+      'Explore my creative journey, skills, and accomplishments! Here, you’ll find highlights of my work, passion projects, and the expertise I bring to every opportunity.',
+    image: imgPortfolio,
+    hasGitRepo: true,
+    gitLink: 'https://github.com/alothanhh/aiden-portfolio.git',
+    techList: ['Next.js', 'Typescript', 'Mantine', 'Framer Motion', 'EmailJs'],
+    link: 'https://picsum.photos/id/10/200/200',
+    teamSize: 1,
+    feTeam: 1,
+    mainFeature: ['Showcase of my skills, projects, and accomplishments.', 'Directly contact me via email.'],
+    responsibilities: [
+      'Generate ideas and build whole website.',
+      'Initialized the project and set up ESLint and Prettier to enhance code efficiency and maintain consistency.',
+    ],
+  },
+  {
     title: 'Quizzes on-chain',
     type: `PROJECT OF ATOM`,
     date: 'Mar 2024 - May 2024',
@@ -286,6 +287,30 @@ export const PROJECTS_LIST_DETAIL = [
     responsibilities: [
       'Being a UI/UX designer for this project.',
       'Implement UI Homepage and support the team to implement UI for other pages.',
+    ],
+  },
+  {
+    title: 'Virtual board ISP',
+    type: 'PROJECT OF ATOM',
+    date: 'Mar 2024',
+    color: 'red',
+    description:
+      'An internal project by ATOM, built to help DevOps teams manage and virtualize resources more efficiently.',
+    image: imgVirtualboard,
+    hasGitRepo: false,
+    gitLink: '',
+    techList: ['Next.js', 'Typescript', 'TailwindCSS', 'React Flow', 'Zustand'],
+    link: 'https://picsum.photos/id/10/200/200',
+    teamSize: 2,
+    feTeam: 2,
+    mainFeature: [
+      'Read resource data from spreadsheets',
+      'Filter and virtualize resource data by various types',
+      'Display changes in resource data',
+    ],
+    responsibilities: [
+      'Designed and implemented the UI/UX',
+      'Developed 2 main features: reading data from spreadsheets and using a recursive function to virtualize data.',
     ],
   },
 

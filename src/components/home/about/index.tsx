@@ -8,7 +8,7 @@ import { Box, Text } from '@mantine/core'
 import icEmail from '@/assets/icons/icEmail.svg'
 import icPhone from '@/assets/icons/icPhone.svg'
 import icPlaceMarker from '@/assets/icons/icPlaceMarker.svg'
-import imgPortrait from '@/assets/images/portrait.jpg'
+import imgPortrait from '@/assets/images/imgAvatar_2.jpg'
 import { ScrollContext } from '@/contexts/scroll.context'
 import useWindowSize from '@/hooks/use-window-size'
 
