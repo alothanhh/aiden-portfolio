@@ -1,20 +1,18 @@
 'use client'
 
-import { useContext, useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { Flex, Text } from '@mantine/core'
 import { ProGallery } from 'pro-gallery'
 
 import Title from '@/components/common/Title'
 import ScrollFadeUp from '@/components/shared/scroll-fade-up'
 import { GALLERY_ITEMS } from '@/constants/gallery.constant'
-import { ScrollContext } from '@/contexts/scroll.context'
 import useWindowSize from '@/hooks/use-window-size'
 
 import 'pro-gallery/dist/statics/main.css'
 
 const Gallery = () => {
   const { isMobile } = useWindowSize()
-  const { targetId, targetRef } = useContext(ScrollContext)
 
   const [galleryWidth, setGalleryWidth] = useState<number>(0) // Initialize to 0
   const [galleryHeight, setGalleryHeight] = useState<number>(0) // Add height state
@@ -107,7 +105,6 @@ const Gallery = () => {
         align='center'
         justify='center'
         p={isMobile ? 'md' : 'xl'}
-        ref={targetId === 'gallery' ? targetRef : null}
         gap={isMobile ? 'sm' : 'md'}
         direction='column'
         style={{

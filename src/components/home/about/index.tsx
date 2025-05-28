@@ -2,21 +2,18 @@
 /* eslint-disable react/no-unescaped-entities */
 import Image from 'next/image'
 
-import { useContext } from 'react'
 import { Box, Text } from '@mantine/core'
 
 import icEmail from '@/assets/icons/icEmail.svg'
 import icPhone from '@/assets/icons/icPhone.svg'
 import icPlaceMarker from '@/assets/icons/icPlaceMarker.svg'
 import imgPortrait from '@/assets/images/imgAvatar_2.jpg'
-import { ScrollContext } from '@/contexts/scroll.context'
 import useWindowSize from '@/hooks/use-window-size'
 
 import ScrollFadeUp from '../../shared/scroll-fade-up'
 
 function About() {
   const { isMobile } = useWindowSize()
-  const { targetRef, targetId } = useContext(ScrollContext)
 
   // const handleDownload = () => {
   //   const pdfUrl = '/cv/Thanh_Dang_Resume.pdf'
@@ -37,7 +34,6 @@ function About() {
     <ScrollFadeUp repeat>
       <Box
         id='about'
-        ref={targetId === 'about' ? targetRef : null}
         style={{
           backgroundColor: '#F7F7F7',
           padding: isMobile ? '32px' : '64px 128px',

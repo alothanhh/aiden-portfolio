@@ -1,13 +1,11 @@
 'use client'
 import Link from 'next/link'
 
-import { useContext } from 'react'
 import { Box, Button, Text } from '@mantine/core'
 import { Title } from '@mantine/core'
 import { IconArrowRight } from '@tabler/icons-react'
 
 import ScrollFadeUp from '@/components/shared/scroll-fade-up'
-import { ScrollContext } from '@/contexts/scroll.context'
 import useWindowSize from '@/hooks/use-window-size'
 import classes from '@/styles/Button.module.css'
 
@@ -15,14 +13,12 @@ import ProjectList from './project-list'
 
 const Projects = () => {
   const { isMobile } = useWindowSize()
-  const { targetRef, targetId } = useContext(ScrollContext)
 
   return (
     <ScrollFadeUp repeat>
       <Box style={{ width: '100%', backgroundColor: 'rgb(247, 247, 247)', display: 'flex', justifyContent: 'center' }}>
         <Box
           id='projects'
-          ref={targetId === 'projects' ? targetRef : null}
           style={{
             display: 'flex',
             flexDirection: isMobile ? 'column' : 'row',

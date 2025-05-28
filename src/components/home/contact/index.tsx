@@ -1,8 +1,7 @@
 'use client'
-import { useContext } from 'react'
+
 import { Box } from '@mantine/core'
 
-import { ScrollContext } from '@/contexts/scroll.context'
 import useWindowSize from '@/hooks/use-window-size'
 
 import Title from '../../common/Title'
@@ -13,14 +12,12 @@ import ContactInfo from './contact-info'
 
 function Contact() {
   const { isMobile } = useWindowSize()
-  const { targetId, targetRef } = useContext(ScrollContext)
 
   return (
     <ScrollFadeUp repeat>
       <Box style={{ display: 'flex', justifyContent: 'center' }}>
         <Box
           id='contact'
-          ref={targetId === 'contact' ? targetRef : null}
           style={{
             paddingTop: '32px',
             maxWidth: '1600px',

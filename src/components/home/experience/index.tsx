@@ -1,9 +1,7 @@
-import { useContext } from 'react'
 import { Box, Flex } from '@mantine/core'
 
 import ScrollFadeUp from '@/components/shared/scroll-fade-up'
 import { ATOM, OROCHI, XELEX } from '@/constants/experience.constant'
-import { ScrollContext } from '@/contexts/scroll.context'
 import useWindowSize from '@/hooks/use-window-size'
 
 import Title from '../../common/Title'
@@ -13,13 +11,11 @@ import SingleRoleCard from './single-role-card'
 
 const Experience = () => {
   const { isMobile } = useWindowSize()
-  const { targetRef, targetId } = useContext(ScrollContext)
 
   return (
     <ScrollFadeUp repeat>
       <Box
         id='experience'
-        ref={targetId === 'experience' ? targetRef : null}
         style={{
           backgroundColor: '#F7F7F7',
           display: 'flex',

@@ -1,17 +1,14 @@
 'use client'
 
-import { useContext } from 'react'
 import { Box, Flex, List, Text, ThemeIcon } from '@mantine/core'
 import { IconAward, IconBriefcase, IconCertificate } from '@tabler/icons-react'
 
 import Title from '@/components/common/Title'
 import ScrollFadeUp from '@/components/shared/scroll-fade-up'
-import { ScrollContext } from '@/contexts/scroll.context'
 import useWindowSize from '@/hooks/use-window-size'
 
 const Education = () => {
   const { isMobile } = useWindowSize()
-  const { targetId, targetRef } = useContext(ScrollContext)
 
   return (
     <ScrollFadeUp repeat>
@@ -20,7 +17,6 @@ const Education = () => {
         align='center'
         justify='center'
         p={isMobile ? 'md' : 'xl'}
-        ref={targetId === 'education' ? targetRef : null}
         gap={isMobile ? '0' : 'md'}
         direction='column'
         style={{

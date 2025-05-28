@@ -1,9 +1,9 @@
 'use client'
-import { RefObject, useContext } from 'react'
+import { useRouter } from 'next/navigation'
+
+import { RefObject } from 'react'
 import { Button } from '@mantine/core'
 import { useHover } from '@mantine/hooks'
-
-import { ScrollContext } from '@/contexts/scroll.context'
 
 type HeaderSectionProps = {
   button: { label: string; id: string }
@@ -12,11 +12,10 @@ type HeaderSectionProps = {
 
 const HeaderSection = ({ button, onClose }: HeaderSectionProps) => {
   const { ref, hovered } = useHover<HTMLButtonElement>()
-  const { handleClick } = useContext(ScrollContext)
+  const router = useRouter()
 
   const handleButtonClick = (id: string) => {
-    // scroll function
-    handleClick(id)
+    router.push(`#${id}`)
     onClose()
   }
 

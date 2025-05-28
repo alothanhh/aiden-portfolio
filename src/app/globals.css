@@ -4,7 +4,9 @@
   Josh's Custom CSS Reset
   https://www.joshwcomeau.com/css/custom-css-reset/
 */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 * {
@@ -16,12 +18,19 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-img, picture, video, canvas, svg {
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
   max-width: 100%;
 }
 
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit;
 }
 
@@ -40,7 +49,7 @@ input, button, textarea, select {
 }
 
 .input_error::placeholder {
-  color: red
+  color: red;
 }
 
 .gradient-text {
@@ -48,7 +57,9 @@ input, button, textarea, select {
   color: transparent;
   background-image: linear-gradient(90deg, rgb(26, 247, 169), rgb(8, 205, 218), rgb(26, 247, 169));
   background-clip: text;
-  transition: background-position 0.8s ease, color 0.3s ease;
+  transition:
+    background-position 0.8s ease,
+    color 0.3s ease;
   background-size: 200%;
   background-position: 100% 0;
   background-image: linear-gradient(90deg, rgb(26, 247, 169), rgb(8, 205, 218), rgb(26, 247, 169));
@@ -58,7 +69,13 @@ input, button, textarea, select {
   }
 }
 
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   overflow-wrap: break-word;
 }
 
@@ -66,7 +83,8 @@ p, h1, h2, h3, h4, h5, h6 {
   --primary-color: linear-gradient(269.45deg, rgb(26, 247, 169) 0%, rgb(8, 205, 218) 100%);
 }
 
-#root, #__next {
+#root,
+#__next {
   isolation: isolate;
 }
 
@@ -105,4 +123,8 @@ html {
 
 .no-scrollbar::-webkit-scrollbar {
   display: none;
+}
+
+.smooth-scroll {
+  scroll-behavior: smooth !important;
 }
