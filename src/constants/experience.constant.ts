@@ -1,4 +1,5 @@
 import icAtom from '@/assets/icons/company-logo/Atom.png'
+import icOrochi from '@/assets/icons/company-logo/Orochi.jpg'
 import icXelex from '@/assets/icons/company-logo/Xelex.jpg'
 
 export const XELEX = {
@@ -10,9 +11,8 @@ export const XELEX = {
   description: [
     '• Gained hands-on experience and expanded knowledge of Angular. Additionally, I explored TailwindCSS, MongoDB, and ASP.NET Core during my internship.',
     '• Collaborated on the Onboarding project: Worked closely with teammates and a mentor on a project inspired by the Monday App - a popular tool that helps users plan tasks and schedules.',
-    '• Contributed to website development: Developed a user-friendly, responsive, and accessible interface, ensuring a seamless user experience.',
-    // "• Technologies and skills: Angular 16, TailwindCSS, MongoDB, ASP.NET Core, collaboration, presentation.",
   ],
+  tags: ['Angular', 'TailwindCSS', 'MongoDB', 'ASP.NET Core'],
 }
 
 export const ATOM = {
@@ -39,6 +39,17 @@ export const ATOM = {
       ],
     },
   ],
+  tags: ['NextJS', 'ReactJS', 'TailwindCSS', 'Vite', 'Web3', 'Blockchain'],
+}
+
+export const OROCHI = {
+  title: 'Frontend Developer',
+  company_name: 'Orochi Network',
+  logo: icOrochi,
+  location: 'Ho Chi Minh City, Vietnam',
+  date: 'Apr 2025 - Present',
+  description: ["I'm a newbie here. I'll be sharing my journey soon! ^^"],
+  tags: [],
 }
 
 export type SingleRoleExperienceProps = typeof XELEX

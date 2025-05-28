@@ -2,10 +2,10 @@ import { useContext } from 'react'
 import { Box, Flex } from '@mantine/core'
 
 import ScrollFadeUp from '@/components/shared/scroll-fade-up'
+import { ATOM, OROCHI, XELEX } from '@/constants/experience.constant'
 import { ScrollContext } from '@/contexts/scroll.context'
 import useWindowSize from '@/hooks/use-window-size'
 
-import { ATOM, XELEX } from '../../../constants/experience.constant'
 import Title from '../../common/Title'
 
 import MultiRoleCard from './multi-role-card'
@@ -41,6 +41,7 @@ const Experience = () => {
           }}
           gap='md'
         >
+          <SingleRoleCard experience={OROCHI} />
           <MultiRoleCard experience={ATOM} />
           <SingleRoleCard experience={XELEX} />
         </Flex>

@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-import { Flex, Text, ThemeIcon, Timeline } from '@mantine/core'
+import { Badge, Flex, Text, ThemeIcon, Timeline } from '@mantine/core'
 
 import useWindowSize from '@/hooks/use-window-size'
 
@@ -62,6 +62,14 @@ const MultiRoleCard = ({ experience }: { experience: MultiRoleExperienceProps })
             </Timeline.Item>
           ))}
         </Timeline>
+
+        <Flex gap='xs' mt={10}>
+          {experience.tags.map((tag, index) => (
+            <Badge color='rgb(8, 205, 218)' variant='light' radius='xl' key={index}>
+              {tag}
+            </Badge>
+          ))}
+        </Flex>
       </Flex>
     </Flex>
   )

@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-import { Flex, Text } from '@mantine/core'
+import { Badge, Flex, Text } from '@mantine/core'
 
 import useWindowSize from '@/hooks/use-window-size'
 
@@ -53,6 +53,14 @@ const SingleRoleCard = ({ experience }: { experience: SingleRoleExperienceProps 
             <Text key={index} size='md'>
               {description}
             </Text>
+          ))}
+        </Flex>
+
+        <Flex gap='xs' mt={10}>
+          {experience.tags.map((tag, index) => (
+            <Badge color='rgb(8, 205, 218)' variant='light' radius='xl' key={index}>
+              {tag}
+            </Badge>
           ))}
         </Flex>
       </Flex>

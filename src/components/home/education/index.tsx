@@ -63,19 +63,6 @@ const Education = () => {
             <List.Item>
               <Box style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
                 <Text size='md'>GPA: 3.4/4 (or 8.05/10)</Text>{' '}
-                {/* <Link
-                  href={'https://drive.google.com/file/d/1URIBtR54R9uuouRMAvWEQezYutFzfKBY/view?usp=sharing'}
-                  target='_blank'
-                  style={{
-                    border: 'none',
-                    padding: 0,
-                    fontWeight: '500',
-                    textDecoration: 'underline',
-                    color: 'rgb(8, 205, 218)',
-                  }}
-                >
-                  Transcript
-                </Link> */}
               </Box>
             </List.Item>
           </List>
