@@ -1,6 +1,5 @@
 'use client'
 
-import Header from '@/components/header'
 import About from '@/components/home/about'
 import Contact from '@/components/home/contact'
 import Education from '@/components/home/education'
@@ -11,8 +10,7 @@ import SkillMarquee from '@/components/home/skill-marquee'
 
 export default function Home() {
   return (
-    <main style={{ marginTop: '70px', width: 'device-width' }}>
-      <Header />
+    <main style={{ width: 'device-width' }}>
       <About />
       <SkillMarquee />
       <Experience />

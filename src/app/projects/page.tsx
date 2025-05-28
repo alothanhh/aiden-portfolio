@@ -7,7 +7,7 @@ import ScrollFadeUp from '@/components/shared/scroll-fade-up'
 const Projects = () => {
   return (
     <ScrollFadeUp repeat>
-      <Grid pt={70} pb={70}>
+      <Grid pb={70}>
         <Box
           style={{
             backgroundColor: '#F7F7F7',

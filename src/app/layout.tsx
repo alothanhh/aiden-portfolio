@@ -4,6 +4,7 @@ import { Analytics } from '@vercel/analytics/react'
 // import { Inter, Montserrat, Geist } from "next/font/google";
 import { GeistSans } from 'geist/font/sans'
 
+import Header from '@/components/header'
 import AppProvider from '@/providers'
 
 import './globals.css'
@@ -21,7 +22,10 @@ export default function RootLayout({
   return (
     <html lang='en' className='smooth-scroll'>
       <body className={GeistSans.className}>
-        <AppProvider>{children}</AppProvider>
+        <AppProvider>
+          <Header />
+          {children}
+        </AppProvider>
         <Analytics />
       </body>
     </html>
