@@ -101,7 +101,7 @@ const Gallery = () => {
   return (
     <ScrollFadeUp repeat>
       <Flex
-        id='education'
+        id='gallery'
         align='center'
         justify='center'
         p={isMobile ? 'md' : 'xl'}
