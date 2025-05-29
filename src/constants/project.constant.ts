@@ -10,14 +10,6 @@ import imgVirtualboard from '@/assets/images/projects/imgVirtualboard.png'
 
 export const PROJECTS_LIST = [
   {
-    title: 'Aiden Portfolio',
-    description:
-      'Explore my creative journey, skills, and accomplishments! Here, you’ll find highlights of my work, passion projects, and the expertise I bring to every opportunity.',
-    image: imgPortfolio,
-    techList: ['Next.js', 'Typescript', 'Mantine', 'EmailJs'],
-    link: 'https://picsum.photos/id/10/200/200',
-  },
-  {
     title: 'Merchant Platform for bank',
     description:
       'A comprehensive management platform designed for merchants, developed as a collaborative project between ATOM and banks.',
@@ -39,6 +31,14 @@ export const PROJECTS_LIST = [
       'A project for partner clients to explore, register, and test ATOM’s products and services, with a primary focus on API testing.',
     image: imgAtomHub,
     techList: ['Next.js', 'Typescript', 'TailwindCSS'],
+    link: 'https://picsum.photos/id/10/200/200',
+  },
+  {
+    title: 'Aiden Portfolio',
+    description:
+      'Explore my creative journey, skills, and accomplishments! Here, you’ll find highlights of my work, passion projects, and the expertise I bring to every opportunity.',
+    image: imgPortfolio,
+    techList: ['Next.js', 'Typescript', 'Mantine', 'EmailJs'],
     link: 'https://picsum.photos/id/10/200/200',
   },
   // {
