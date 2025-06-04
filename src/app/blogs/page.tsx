@@ -1,5 +1,6 @@
 'use client'
 import { useEffect, useState } from 'react'
+import { Flex } from '@mantine/core'
 
 interface BlogPost {
   sys: { id: string }
@@ -22,13 +23,14 @@ const Blogs = () => {
   }, [])
 
   return (
-    <div>
+    <Flex direction='column' gap='sm' style={{ padding: '2rem' }}>
+      <h3>I have used Contentful and GraphQl to create this page. I&apos;ll be adding more content soon.</h3>
       <ul>
         {posts.map((post, index) => (
           <li key={index}>{post.title}</li>
         ))}
       </ul>
-    </div>
+    </Flex>
   )
 }
 

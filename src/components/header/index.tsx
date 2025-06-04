@@ -8,7 +8,7 @@ import { Burger, Drawer } from '@mantine/core'
 import { useHeadroom } from '@mantine/hooks'
 import { useDisclosure } from '@mantine/hooks'
 
-import { HEADER_BUTTONS } from '../../constants/header.constant'
+import { LIST_HEADER_ITEM } from '@/constants/header.constant'
 
 import HeaderSection from './header-section'
 
@@ -66,8 +66,8 @@ function Header() {
           align={{ sm: 'center' }}
           display={isRootPage ? 'flex' : 'none'}
         >
-          {HEADER_BUTTONS.map((button, index) => (
-            <HeaderSection button={button} key={index} onClose={close} />
+          {LIST_HEADER_ITEM.map((item, index) => (
+            <HeaderSection item={item} key={index} onClose={close} />
           ))}
         </Flex>
         <Burger
@@ -97,8 +97,8 @@ function Header() {
             height: '100vh',
           }}
         >
-          {HEADER_BUTTONS.map((button, index) => (
-            <HeaderSection button={button} key={index} onClose={close} />
+          {LIST_HEADER_ITEM.map((item, index) => (
+            <HeaderSection item={item} key={index} onClose={close} />
           ))}
         </Flex>
       </Drawer>

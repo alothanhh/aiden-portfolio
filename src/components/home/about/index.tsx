@@ -33,7 +33,6 @@ function About() {
   return (
     <ScrollFadeUp repeat>
       <Box
-        id='about'
         style={{
           backgroundColor: '#F7F7F7',
           padding: isMobile ? '32px' : '64px 128px',

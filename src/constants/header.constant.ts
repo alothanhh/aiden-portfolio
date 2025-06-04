@@ -1,8 +1,10 @@
-export const HEADER_BUTTONS = [
-  { label: 'ABOUT', id: 'about' },
-  { label: 'EXPERIENCE', id: 'experience' },
-  { label: 'PROJECTS', id: 'projects' },
-  { label: 'EDUCATION', id: 'education' },
-  { label: 'GALLERY', id: 'gallery' },
-  { label: 'CONTACT', id: 'contact' },
+import { THeaderItem } from '@/types'
+
+export const LIST_HEADER_ITEM: THeaderItem[] = [
+  { label: 'EXPERIENCE', href: '#experience' },
+  { label: 'PROJECTS', href: '/projects' },
+  { label: 'BLOGS', href: '/blogs' },
+  { label: 'EDUCATION', href: '#education' },
+  { label: 'GALLERY', href: '#gallery' },
+  { label: 'CONTACT', href: '#contact' },
 ]

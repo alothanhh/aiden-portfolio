@@ -5,17 +5,26 @@ import { RefObject } from 'react'
 import { Button } from '@mantine/core'
 import { useHover } from '@mantine/hooks'
 
+import { THeaderItem } from '@/types'
+
 type HeaderSectionProps = {
-  button: { label: string; id: string }
+  item: THeaderItem
   onClose: () => void
 }
 
-const HeaderSection = ({ button, onClose }: HeaderSectionProps) => {
+const HeaderSection = ({ item, onClose }: HeaderSectionProps) => {
   const { ref, hovered } = useHover<HTMLButtonElement>()
   const router = useRouter()
 
-  const handleButtonClick = (id: string) => {
-    router.push(`#${id}`)
+  const handleButtonClick = (href: string) => {
+    if (href.startsWith('#')) {
+      const id = href.replace('#', '')
+      router.push(`#${id}`)
+      onClose()
+      return
+    }
+
+    window.open(href, '_blank')
     onClose()
   }
 
@@ -28,9 +37,9 @@ const HeaderSection = ({ button, onClose }: HeaderSectionProps) => {
         color: hovered ? 'rgb(26, 247, 169)' : 'white',
       }}
       ref={ref as RefObject<HTMLButtonElement>}
-      onClick={() => handleButtonClick(button.id)}
+      onClick={() => handleButtonClick(item.href)}
     >
-      {button.label}
+      {item.label}
     </Button>
   )
 }
