@@ -11,7 +11,8 @@ import './globals.css'
 
 export const metadata: Metadata = {
   title: 'Aiden Dang | Portfolio',
-  description: "Aiden's Portfolio",
+  description:
+    'Explore my creative journey, skills, and accomplishments! Here, you’ll find highlights of my work, passion projects, and the expertise I bring to every opportunity.',
 }
 
 export default function RootLayout({
