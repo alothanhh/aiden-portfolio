@@ -10,6 +10,7 @@ import AppProvider from '@/providers'
 import './globals.css'
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://aiden-portfolio.site/'),
   title: 'Aiden Dang | Portfolio',
   description:
     'Explore my creative journey, skills, and accomplishments! Here, you’ll find highlights of my work, passion projects, and the expertise I bring to every opportunity.',
