@@ -2,6 +2,8 @@
 import { useEffect, useState } from 'react'
 import { Flex } from '@mantine/core'
 
+import { BlogBody, BlogHero } from './_components'
+
 interface BlogPost {
   sys: { id: string }
   title: string
@@ -10,6 +12,7 @@ interface BlogPost {
 }
 
 const Blogs = () => {
+  // eslint-disable-next-line unused-imports/no-unused-vars
   const [posts, setPosts] = useState<BlogPost[]>([])
 
   useEffect(() => {
@@ -23,13 +26,9 @@ const Blogs = () => {
   }, [])
 
   return (
-    <Flex direction='column' gap='sm' style={{ padding: '2rem' }}>
-      <h3>I have used Contentful and GraphQl to create this page. I&apos;ll be adding more content soon.</h3>
-      <ul>
-        {posts.map((post, index) => (
-          <li key={index}>{post.title}</li>
-        ))}
-      </ul>
+    <Flex direction='column' gap='sm' w='100%'>
+      <BlogHero />
+      <BlogBody />
     </Flex>
   )
 }

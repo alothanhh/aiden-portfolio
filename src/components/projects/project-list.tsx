@@ -39,7 +39,7 @@ const ProjectList = () => {
             onMouseLeave={() => setActiveCard(null)}
             onClick={() => handleViewProject(index)}
           >
-            <ProjectCard project={project} opacity={activeCard === index || activeCard === null ? '1' : '0.5'} />
+            <ProjectCard project={project} opacity={activeCard === index || activeCard === null ? '1' : '0.7'} />
           </Grid.Col>
         ))}
         <Grid.Col

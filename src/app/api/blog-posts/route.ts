@@ -13,6 +13,14 @@ const GET_ALL_BLOG_POSTS = `
           id
         }
         title
+        author {
+          name
+        }
+        slug
+        featuredImage { 
+         url
+        }
+        publishedDate
       }
     }
   }

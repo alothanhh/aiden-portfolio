@@ -1,6 +1,5 @@
 import type { Metadata } from 'next'
 
-import { Analytics } from '@vercel/analytics/react'
 // import { Inter, Montserrat, Geist } from "next/font/google";
 import { GeistSans } from 'geist/font/sans'
 
@@ -28,7 +27,7 @@ export default function RootLayout({
           <Header />
           {children}
         </AppProvider>
-        <Analytics />
+        {/* <Analytics /> */}
       </body>
     </html>
   )
