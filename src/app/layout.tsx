@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 
 // import { Inter, Montserrat, Geist } from "next/font/google";
+import { Analytics } from '@vercel/analytics/next'
 import { GeistSans } from 'geist/font/sans'
 
 import Header from '@/components/header'
@@ -27,7 +28,7 @@ export default function RootLayout({
           <Header />
           {children}
         </AppProvider>
-        {/* <Analytics /> */}
+        <Analytics />
       </body>
     </html>
   )

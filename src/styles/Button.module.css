@@ -1,11 +1,27 @@
 .button-gradient {
-    transition: background-position 0.8s ease, color 0.3s ease;
-    background-size: 200%;
-    background-position: 100% 0;
-    background-image: linear-gradient(90deg, rgb(26, 247, 169), rgb(8, 205, 218), rgb(26, 247, 169));
-    width: 'max-content';
-    &:hover {
-      background-image: linear-gradient(90deg, rgb(8, 205, 218), rgb(26, 247, 169), rgb(8, 205, 218));
-      background-position: 0% 0;
-    }
+  transition:
+    background-position 0.8s ease,
+    color 0.3s ease;
+  background-size: 200%;
+  background-position: 100% 0;
+  background-image: linear-gradient(90deg, rgb(26, 247, 169), rgb(8, 205, 218), rgb(26, 247, 169));
+  width: 'max-content';
+  &:hover {
+    background-image: linear-gradient(90deg, rgb(8, 205, 218), rgb(26, 247, 169), rgb(8, 205, 218));
+    background-position: 0% 0;
   }
+}
+
+.button-blue {
+  transition:
+    background-position 0.8s ease,
+    color 0.3s ease;
+  background-size: 200%;
+  background-position: 100% 0;
+  background-image: linear-gradient(90deg, rgb(8, 205, 218), rgb(8, 205, 218), rgb(8, 205, 218));
+  width: 'max-content';
+  &:hover {
+    background-image: linear-gradient(90deg, rgb(8, 205, 218), rgb(26, 247, 169), rgb(8, 205, 218));
+    background-position: 0% 0;
+  }
+}

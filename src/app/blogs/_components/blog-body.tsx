@@ -4,7 +4,9 @@ import { useEffect, useState } from 'react'
 import { Badge, Button, Card, CloseButton, Flex, Grid, Group, Image, Text, TextInput } from '@mantine/core'
 import { IconSearch } from '@tabler/icons-react'
 
-const topics = ['All', 'Frontend', 'Next', 'React', 'Interview']
+import classes from '@/styles/Button.module.css'
+
+// const topics = ['All', 'Frontend', 'Next', 'React', 'Interview']
 
 type BlogCardProps = {
   title: string
@@ -19,14 +21,14 @@ type BlogCardProps = {
 }
 
 export const BlogBody = () => {
-  const [selectedTopics, setSelectedTopics] = useState<string[]>([])
+  // const [selectedTopics, setSelectedTopics] = useState<string[]>([])
   const [search, setSearch] = useState('')
   const [hovered, setHovered] = useState<string | null>(null)
   const router = useRouter()
 
-  const toggleTopic = (topic: string) => {
-    setSelectedTopics((current) => (current.includes(topic) ? current.filter((t) => t !== topic) : [...current, topic]))
-  }
+  // const toggleTopic = (topic: string) => {
+  //   setSelectedTopics((current) => (current.includes(topic) ? current.filter((t) => t !== topic) : [...current, topic]))
+  // }
 
   const [posts, setPosts] = useState<BlogCardProps[]>([])
 
@@ -42,7 +44,7 @@ export const BlogBody = () => {
 
   return (
     <Flex direction='column' align='center' gap='lg' m='xl'>
-      <Group justify='center'>
+      {/* <Group justify='center'>
         {topics.map((topic) => {
           const isSelected = selectedTopics.includes(topic)
 
@@ -61,7 +63,7 @@ export const BlogBody = () => {
             </Badge>
           )
         })}
-      </Group>
+      </Group> */}
 
       <TextInput
         placeholder='Search blog topics...'
@@ -80,7 +82,7 @@ export const BlogBody = () => {
         style={{ width: '100%' }}
       />
 
-      <Grid justify='center' align='center'>
+      <Grid style={{ width: '100%' }}>
         {posts.map((post) => {
           const date = new Date(post.publishedDate)
           const formattedDate = date.toLocaleDateString('en-GB')
@@ -103,26 +105,29 @@ export const BlogBody = () => {
                   transition: 'opacity 0.3s ease',
                   opacity: isOther ? 0.5 : 1,
                   cursor: 'pointer',
+                  justifyContent: 'space-between',
                 }}
               >
-                <Card.Section>
-                  <Image src={post.featuredImage.url} height={160} alt={post.title} />
-                </Card.Section>
+                <Flex direction='column'>
+                  <Card.Section>
+                    <Image src={post.featuredImage.url} height={160} alt={post.title} />
+                  </Card.Section>
 
-                <Text fw={500} size='lg' mt='md' lineClamp={2}>
-                  {post.title}
-                </Text>
-
-                <Group mt='xs' mb='md' justify='space-between' display={'flex'}>
-                  <Text size='sm' c='dimmed'>
-                    By {post.author.name}
+                  <Text fw={500} size='lg' mt='md' lineClamp={2}>
+                    {post.title}
                   </Text>
-                  <Badge color='gray' variant='light'>
-                    {formattedDate}
-                  </Badge>
-                </Group>
 
-                <Button variant='light' c='var(----primary-color)' fullWidth>
+                  <Group mt='xs' mb='md' justify='space-between' display={'flex'}>
+                    <Text size='sm' c='dimmed'>
+                      By {post.author.name}
+                    </Text>
+                    <Badge color='gray' variant='light'>
+                      {formattedDate}
+                    </Badge>
+                  </Group>
+                </Flex>
+
+                <Button fullWidth className={classes['button-blue']}>
                   Read more
                 </Button>
               </Card>
