@@ -58,7 +58,7 @@ const Education = () => {
             </List.Item>
             <List.Item>
               <Box style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
-                <Text size='md'>GPA: 3.4/4 (or 8.05/10)</Text>{' '}
+                <Text size='md'>Very Good degree - GPA: 3.4/4</Text>{' '}
               </Box>
             </List.Item>
           </List>
@@ -119,7 +119,7 @@ const Education = () => {
                 </Text>
               </List.Item>
               <List.Item>
-                <Text size='md'>TOEIC Reading & Listening | Score: 680</Text>
+                <Text size='md'>TOEIC Reading & Listening | Score: 810</Text>
               </List.Item>
             </List>
 
