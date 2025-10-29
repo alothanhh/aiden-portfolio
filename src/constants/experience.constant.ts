@@ -48,7 +48,11 @@ export const OROCHI = {
   logo: icOrochi,
   location: 'Ho Chi Minh City, Vietnam',
   date: 'Apr 2025 - Present',
-  description: ["I'm a newbie here. I'll be sharing my journey soon! ^^"],
+  description: [
+    '• Contributed to the company’s product related to blockchain features and the development of a reusable internal UI package.',
+    '• Applied SOLID and DRY principles to maintain high code quality, scalability, and ease of maintenance.',
+    '• Implemented best practices for security, performance, and code optimization.',
+  ],
   tags: [],
 }
 

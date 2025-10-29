@@ -1,3 +1,5 @@
+import { Box } from '@mantine/core'
+
 import imgAtomHub from '@/assets/images/projects/imgAtomHub.jpg'
 import imgBVBank from '@/assets/images/projects/imgBVBank.jpg'
 import imgForms from '@/assets/images/projects/imgForms.jpg'
@@ -6,9 +8,18 @@ import imgMugiRecipe from '@/assets/images/projects/imgMugiRecipe.png'
 import imgOcb from '@/assets/images/projects/imgOCB.jpg'
 import imgPortfolio from '@/assets/images/projects/imgPortfolio.jpg'
 import imgQuizzes from '@/assets/images/projects/imgQuizzes.png'
+import imgSuperVietnam from '@/assets/images/projects/imgSuperVietnam.png'
 import imgVirtualboard from '@/assets/images/projects/imgVirtualboard.png'
 
 export const PROJECTS_LIST = [
+  {
+    title: 'Super Vietnam',
+    description:
+      'Super Vietnam is a landing page implemented for Super Vietnam event - Top Blockchain & AI Week, June 4-5, 2025. Organized by Orochi Network, DSAC, VnExpress, and FPT Online.',
+    image: imgSuperVietnam,
+    techList: ['Next.js', 'Typescript', 'TailwindCSS'],
+    link: 'https://picsum.photos/id/10/200/200',
+  },
   {
     title: 'Merchant Platform for bank',
     description:
@@ -23,14 +34,6 @@ export const PROJECTS_LIST = [
       'The project is a collaboration between ATOM and banks, designed to support payment solutions for education. It helps students and cashiers efficiently pay and manage tuition bills.',
     image: imgOcb,
     techList: ['React + Vite', 'Javascript', 'TailwindCSS', 'Redux', 'Redux Toolkit'],
-    link: 'https://picsum.photos/id/10/200/200',
-  },
-  {
-    title: 'ATOM HUB',
-    description:
-      'A project for partner clients to explore, register, and test ATOM’s products and services, with a primary focus on API testing.',
-    image: imgAtomHub,
-    techList: ['Next.js', 'Typescript', 'TailwindCSS'],
     link: 'https://picsum.photos/id/10/200/200',
   },
   {
@@ -61,8 +64,44 @@ export const PROJECTS_LIST = [
 
 export const PROJECTS_LIST_DETAIL = [
   {
+    title: 'Super Vietnam',
+    type: 'OROCHI NETWORK',
+    date: 'Apr 2025 - Jun 2025',
+    color: 'orange',
+    description: (
+      <Box style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+        <div style={{ display: 'flex', gap: '4px' }}>
+          <b>Website:</b>
+          <a href='https://supervietnam.com/' target='_blank'>
+            https://supervietnam.com/
+          </a>
+        </div>
+
+        <p>
+          Super Vietnam is a landing page implemented for Super Vietnam event - Top Blockchain & AI Week, June 4-5,
+          2025. Organized by Orochi Network, DSAC, VnExpress, and FPT Online.
+        </p>
+      </Box>
+    ),
+    image: imgSuperVietnam,
+    hasGitRepo: false,
+    gitLink: '',
+    techList: ['Next.js', 'Typescript', 'TailwindCSS', 'i18next'],
+    link: 'https://picsum.photos/id/10/200/200',
+    teamSize: 8,
+    feTeam: 3,
+    mainFeature: [
+      'Before the event: Show the latest updates for the event, including timeline, speakers, and activities',
+      'After the event: Show the highlights acquired from the event',
+    ],
+    responsibilities: [
+      'Create an appealing UI for the landing page',
+      'Manage and update content promptly, precisely, and efficiently',
+    ],
+  },
+  {
     title: 'Merchant Platform for bank',
-    type: 'PROJECT OF ATOM',
+    type: 'ATOM SOLUTION',
     date: 'Aug 2024 - Present',
     color: 'red',
     description:
@@ -98,7 +137,7 @@ export const PROJECTS_LIST_DETAIL = [
   },
   {
     title: 'Payment and school management Platform',
-    type: 'PROJECT OF ATOM',
+    type: 'ATOM SOLUTION',
     date: 'Aug 2024 - Dec 2024',
     color: 'red',
     description:
@@ -132,8 +171,28 @@ export const PROJECTS_LIST_DETAIL = [
     ],
   },
   {
+    title: 'Aiden Portfolio',
+    type: 'PERSONAL PROJECT',
+    date: 'Dec 2024',
+    color: 'green',
+    description:
+      'Explore my creative journey, skills, and accomplishments! Here, you’ll find highlights of my work, passion projects, and the expertise I bring to every opportunity.',
+    image: imgPortfolio,
+    hasGitRepo: true,
+    gitLink: 'https://github.com/alothanhh/aiden-portfolio.git',
+    techList: ['Next.js', 'Typescript', 'Mantine', 'Framer Motion', 'EmailJs'],
+    link: 'https://picsum.photos/id/10/200/200',
+    teamSize: 1,
+    feTeam: 1,
+    mainFeature: ['Showcase of my skills, projects, and accomplishments.', 'Directly contact me via email.'],
+    responsibilities: [
+      'Generate ideas and build whole website.',
+      'Initialized the project and set up ESLint and Prettier to enhance code efficiency and maintain consistency.',
+    ],
+  },
+  {
     title: 'ATOM HUB',
-    type: 'PROJECT OF ATOM',
+    type: 'ATOM SOLUTION',
     date: 'Jun 2024 - Aug 2024',
     color: 'red',
     description:
@@ -165,28 +224,8 @@ export const PROJECTS_LIST_DETAIL = [
     ],
   },
   {
-    title: 'Aiden Portfolio',
-    type: 'PERSONAL PROJECT',
-    date: 'Dec 2024',
-    color: 'green',
-    description:
-      'Explore my creative journey, skills, and accomplishments! Here, you’ll find highlights of my work, passion projects, and the expertise I bring to every opportunity.',
-    image: imgPortfolio,
-    hasGitRepo: true,
-    gitLink: 'https://github.com/alothanhh/aiden-portfolio.git',
-    techList: ['Next.js', 'Typescript', 'Mantine', 'Framer Motion', 'EmailJs'],
-    link: 'https://picsum.photos/id/10/200/200',
-    teamSize: 1,
-    feTeam: 1,
-    mainFeature: ['Showcase of my skills, projects, and accomplishments.', 'Directly contact me via email.'],
-    responsibilities: [
-      'Generate ideas and build whole website.',
-      'Initialized the project and set up ESLint and Prettier to enhance code efficiency and maintain consistency.',
-    ],
-  },
-  {
     title: 'Quizzes on-chain',
-    type: `PROJECT OF ATOM`,
+    type: `ATOM SOLUTION`,
     date: 'Mar 2024 - May 2024',
     color: 'red',
     description:
@@ -273,7 +312,7 @@ export const PROJECTS_LIST_DETAIL = [
   },
   {
     title: 'Mock APIS Generator',
-    type: 'PROJECT OF ATOM',
+    type: 'ATOM SOLUTION',
     date: 'Jun 2024',
     color: 'red',
     description:
@@ -291,7 +330,7 @@ export const PROJECTS_LIST_DETAIL = [
   },
   {
     title: 'Virtual board ISP',
-    type: 'PROJECT OF ATOM',
+    type: 'ATOM SOLUTION',
     date: 'Mar 2024',
     color: 'red',
     description:
