@@ -64,45 +64,9 @@ const Education = () => {
           </List>
 
           {/* Achievement */}
-          <Flex direction='column' gap='xs' mt={10}>
-            <Text size='lg' fw={600}>
-              Achievement
-            </Text>
-            <List
-              icon={
-                <ThemeIcon size={24} radius='xl' variant='transparent' color='black'>
-                  <IconAward size={16} />
-                </ThemeIcon>
-              }
-            >
-              <List.Item>
-                <Text size='md'>Student with Five Good Merits Award - Ho Chi Minh City Level</Text>
-                <Text size='sm' c='gray'>
-                  Issued by Vietnam Union of Students of HCMC
-                </Text>
-              </List.Item>
-              <List.Item>
-                <Text size='md'>Fossil Scholarship</Text>
-                <Text size='sm' c='gray'>
-                  Issued by Fossil Group | EMPOWERING IT YOUTH
-                </Text>
-              </List.Item>
-              <List.Item>
-                <Text size='md'>Academic Encouragement Scholarship (2024)</Text>
-                <Text size='sm' c='gray'>
-                  Issued by Ho Chi Minh City University of Technology
-                </Text>
-              </List.Item>
-              <List.Item>
-                <Text size='md'>CSE Alumni Scholarship</Text>
-                <Text size='sm' c='gray'>
-                  Issued by Alumni of the CSE Faculty
-                </Text>
-              </List.Item>
-            </List>
-
+          <Flex direction='column' gap='xs'>
             {/* Certificate */}
-            <Text size='lg' fw={600}>
+            <Text size='lg' fw={600} mt={10}>
               Certificates
             </Text>
             <List
@@ -113,13 +77,40 @@ const Education = () => {
               }
             >
               <List.Item>
+                <Text size='md'>TOEIC Reading & Listening | Score: 810</Text>
+              </List.Item>
+
+              <List.Item>
                 <Text size='md'>Software Development with Scrum Certificate</Text>
                 <Text size='sm' c='gray'>
                   Certified by Axon Active
                 </Text>
               </List.Item>
+            </List>
+
+            <Text size='lg' fw={600}>
+              Achievement
+            </Text>
+            <List
+              icon={
+                <ThemeIcon size={24} radius='xl' variant='transparent' color='black'>
+                  <IconAward size={16} />
+                </ThemeIcon>
+              }
+            >
+              <List.Item
+                style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                }}
+              >
+                <Text size='md'>Academic Encouragement Scholarship (2024)</Text>
+              </List.Item>
               <List.Item>
-                <Text size='md'>TOEIC Reading & Listening | Score: 810</Text>
+                <Text size='md'>Student with Five Good Merits Award (HCM City Level)</Text>
+              </List.Item>
+              <List.Item>
+                <Text size='md'>Fossil Scholarship, CSE Alumni Scholarship</Text>
               </List.Item>
             </List>
 

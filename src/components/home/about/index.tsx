@@ -2,33 +2,37 @@
 /* eslint-disable react/no-unescaped-entities */
 import Image from 'next/image'
 
-import { Box, Text } from '@mantine/core'
+import { useState } from 'react'
+import { Box, Button, Flex, Text } from '@mantine/core'
 
 import icEmail from '@/assets/icons/icEmail.svg'
 import icPhone from '@/assets/icons/icPhone.svg'
 import icPlaceMarker from '@/assets/icons/icPlaceMarker.svg'
 import imgPortrait from '@/assets/images/imgAvatar_2.jpg'
+import { ModalPreview } from '@/components/shared/modal-preview'
 import useWindowSize from '@/hooks/use-window-size'
+import classes from '@/styles/Button.module.css'
 
 import ScrollFadeUp from '../../shared/scroll-fade-up'
 
 function About() {
   const { isMobile } = useWindowSize()
+  const [isOpen, setIsOpen] = useState<boolean>(false)
 
-  // const handleDownload = () => {
-  //   const pdfUrl = '/cv/Thanh_Dang_Resume.pdf'
+  const handleDownload = () => {
+    const pdfUrl = '/CV_Thanh_Dang.pdf'
 
-  //   const fileName = 'Thanh_Dang_Resume.pdf'
+    const fileName = 'CV_Thanh_Dang.pdf'
 
-  //   const link = document.createElement('a')
-  //   link.href = pdfUrl
-  //   link.download = fileName
+    const link = document.createElement('a')
+    link.href = pdfUrl
+    link.download = fileName
 
-  //   document.body.appendChild(link)
-  //   link.click()
+    document.body.appendChild(link)
+    link.click()
 
-  //   document.body.removeChild(link)
-  // }
+    document.body.removeChild(link)
+  }
 
   return (
     <ScrollFadeUp repeat>
@@ -103,16 +107,20 @@ function About() {
               </Box>
             </Box>
 
-            {/* <Flex gap={4}>
-              <Link href='/cv-preview' target='_blank'>
-                <Button variant='outline' c='rgb(8, 205, 218)' style={{ borderColor: 'rgb(8, 205, 218)' }}>
-                  PREVIEW CV
-                </Button>
-              </Link>
+            <Flex gap={4}>
+              <Button
+                onClick={() => setIsOpen(true)}
+                variant='outline'
+                c='rgb(8, 205, 218)'
+                style={{ borderColor: 'rgb(8, 205, 218)' }}
+              >
+                PREVIEW CV
+              </Button>
+
               <Button onClick={handleDownload} className={classes['button-gradient']}>
                 DOWNLOAD CV
               </Button>
-            </Flex> */}
+            </Flex>
           </Box>
         </Box>
 
@@ -131,6 +139,8 @@ function About() {
           }}
         />
       </Box>
+
+      <ModalPreview isOpen={isOpen} onClose={() => setIsOpen(false)} />
     </ScrollFadeUp>
   )
 }

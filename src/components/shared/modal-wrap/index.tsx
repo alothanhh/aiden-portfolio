@@ -13,9 +13,10 @@ type Props = {
   hideIcClose?: boolean
   className?: string
   blurClassName?: string
+  style?: React.CSSProperties
 }
 
-const ModalWrap = ({ isOpen = false, onClose, children, title, hideIcClose }: Props) => {
+const ModalWrap = ({ isOpen = false, onClose, children, title, hideIcClose, style }: Props) => {
   return (
     <AnimatePresence>
       {isOpen && (
@@ -56,6 +57,7 @@ const ModalWrap = ({ isOpen = false, onClose, children, title, hideIcClose }: Pr
               backgroundColor: 'white',
               padding: '16px 24px', // Approximates Tailwind's px-6 py-8
               color: '#0A203D',
+              ...style,
             }}
           >
             {!hideIcClose && (

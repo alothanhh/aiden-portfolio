@@ -81,7 +81,7 @@ const ProjectCard = ({ project, opacity }: { opacity: string; project: ProjectDe
             )
           })}
         </Box>
-        <Text style={{ fontSize: '14px', height: '100%' }}>{project.description}</Text>
+        <Box style={{ fontSize: '14px', height: '100%' }}>{project.description}</Box>
       </Box>
     </Box>
   )
